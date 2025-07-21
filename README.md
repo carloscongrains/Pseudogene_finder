@@ -63,9 +63,9 @@ Specifies the path to the directory where all output files will be saved. The sc
 Example
 Let's say you have a file my_genes.fasta with sequences to check and known_proteins.fasta as your reference. You want to use the Standard Genetic Code (table 1) and save results to a folder named pseudogene_results.
 
-'''
+```
 python get_stop_codon_frameshifts.py --input_fasta my_genes.fasta --input_reference known_proteins.fasta --genetic_code_table 1 --output_dir pseudogene_results
-'''
+```
 ---
 Output
 The script will generate various output files within the specified --output_dir, including
