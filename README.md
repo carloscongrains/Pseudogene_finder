@@ -9,6 +9,10 @@ Premature Stop Codons: Stop codons appearing before the expected end of the codi
 
 Frameshift Mutations: Insertions or deletions not multiple of 3 that leads to a completely different downstream amino acid sequence and often premature stop codons.
 
+---
+
+## Intallation
+
 Getting Started
 Prerequisites
 
@@ -78,4 +82,6 @@ A summary report detailing identified pseudogenes in a tab-delimited file named:
 
 Fasta files of every combination of query and reference and their corresponding alignments.
 
-Reference
+---
+
+## Reference
