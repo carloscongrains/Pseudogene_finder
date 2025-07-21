@@ -8,9 +8,9 @@ This script is designed to identify potential pseudogenes within a query sequenc
 
 The script takes a query FASTA file (containing sequences you want to analyze) and a reference FASTA file (containing known functional genes or proteins). It is recommended to use a complete reference sequence (including start codon and stop codon). The program aligns the query sequence with the reference using MAFFT algorithm (Katoh et al. 2002) and scans for:
 
-Premature Stop Codons: Stop codons appearing before the expected end of the coding sequence, indicating a truncated protein.
+1. Premature Stop Codons: Stop codons appearing before the expected end of the coding sequence, indicating a truncated protein.
 
-Frameshift Mutations: Insertions or deletions not multiple of 3 that leads to a completely different downstream amino acid sequence and often premature stop codons.
+2. Frameshift Mutations: Insertions or deletions not multiple of 3 that leads to a completely different downstream amino acid sequence and often premature stop codons.
 
 ---
 
