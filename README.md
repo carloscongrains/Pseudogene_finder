@@ -31,10 +31,13 @@ conda install bioconda::mafft
 
 #Activate the environment any time the user runs the script
 
+---
 Usage
 To run the script, use the following command structure:
 
-```python get_stop_codon_frameshifts.py --input_fasta query.fasta --input_reference reference.fasta --genetic_code_table 5 --output_dir output_dir
+```
+python get_stop_codon_frameshifts.py --input_fasta query.fasta --input_reference reference.fasta --genetic_code_table 5 --output_dir output_dir
+```
 
 Command-Line Arguments
 
@@ -56,11 +59,14 @@ Example: 5 refers to the Invertebrate Mitochondrial genetic code.
 
 Specifies the path to the directory where all output files will be saved. The script will create this directory if it does not already exist.
 
+---
 Example
 Let's say you have a file my_genes.fasta with sequences to check and known_proteins.fasta as your reference. You want to use the Standard Genetic Code (table 1) and save results to a folder named pseudogene_results.
 
+'''
 python get_stop_codon_frameshifts.py --input_fasta my_genes.fasta --input_reference known_proteins.fasta --genetic_code_table 1 --output_dir pseudogene_results
-
+'''
+---
 Output
 The script will generate various output files within the specified --output_dir, including
 
