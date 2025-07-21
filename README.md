@@ -34,7 +34,7 @@ conda install bioconda::mafft
 Usage
 To run the script, use the following command structure:
 
-python get_stop_codon_frameshifts.py --input_fasta query.fasta --input_reference reference.fasta --genetic_code_table 5 --output_dir output_dir
+```python get_stop_codon_frameshifts.py --input_fasta query.fasta --input_reference reference.fasta --genetic_code_table 5 --output_dir output_dir
 
 Command-Line Arguments
 
