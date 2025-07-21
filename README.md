@@ -2,7 +2,10 @@
 
 This script is designed to identify potential pseudogenes within a query sequence dataset by comparing them against a reference sequence. It focuses on detecting common pseudogene characteristics, specifically premature stop codons and frameshift mutations, which disrupt the open reading frame (ORF) and lead to non-functional protein products.
 
-How it Works
+---
+
+### How it Works
+
 The script takes a query FASTA file (containing sequences you want to analyze) and a reference FASTA file (containing known functional genes or proteins). It is recommended to use a complete reference sequence (including start codon and stop codon). The program aligns the query sequence with the reference using MAFFT algorithm (Katoh et al. 2002) and scans for:
 
 Premature Stop Codons: Stop codons appearing before the expected end of the coding sequence, indicating a truncated protein.
@@ -40,9 +43,9 @@ conda install conda-forge::biopython
 ```
 conda install bioconda::mafft
 ```
-'''
+''
 Note: Activate the environment any time the user runs the script
-'''
+''
 ---
 
 ## Usage
@@ -86,9 +89,9 @@ python get_stop_codon_frameshifts.py --input_fasta my_genes.fasta --input_refere
 ## Output
 The script will generate various output files within the specified --output_dir, including
 
-A summary report detailing identified pseudogenes in a tab-delimited file named: output_results.txt and located into output_dir location.
-
-Fasta files of every combination of query and reference and their corresponding alignments.
+1. A summary report detailing identified pseudogenes in a tab-delimited file named: output_results.txt and located into output_dir location.   
+2. Fasta files of every combination of query and reference.
+3. Alignments of the fasta files in 2.
 
 ---
 
