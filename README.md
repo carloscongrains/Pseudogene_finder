@@ -14,27 +14,35 @@ Frameshift Mutations: Insertions or deletions not multiple of 3 that leads to a 
 ## Intallation
 
 Getting Started
-Prerequisites
+### Prerequisites
 
 Python 3.x   
 Biopython   
 Mafft 7.x (It should be in the path)   
 
-Installation using conda
+### Installation using conda
 
 This is the recommended way to install the program. It requires conda to be already installed. Then follow the steps:
 
-#Create a environment
+1. Create a environment
+```
 conda create --name pseudogene_finder
-#Open the environment
+```
+2. Open the environment
+```
 conda activate pseudogene_finder
-#Install biopython 
+```
+3. Install biopython 
+```
 conda install conda-forge::biopython
-#Install MAFFT
+```
+4. Install MAFFT
+```
 conda install bioconda::mafft
-
-#Activate the environment any time the user runs the script
-
+```
+'''
+Note: Activate the environment any time the user runs the script
+'''
 ---
 
 ## Usage
