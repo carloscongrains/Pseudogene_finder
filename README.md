@@ -63,7 +63,7 @@ Specifies the path to the input multi FASTA file containing the query nucleotide
 
 --input_reference <path/to/reference.fasta> (Required)
 
-Specifies the path to the input FASTA file containing the reference in nucleotide sequence (only one reference is allowed). The reference must start in the 1st codon position and its length must be a multiple of 3. These are used for comparison and determining expected coding regions.
+Specifies the path to the input FASTA file containing the reference in nucleotide sequence (only one reference is allowed). Ideally the reference should contain the complete coding region of the evaluated gene from the same species or closely realted species. Otherwise, the reference must fulfil two conditions: Starting in the 1st codon position and having a length multiple of 3. Query sequences must be contained into the reference. This reference sequence will be used for comparison and determining expected coding regions in the query sequences.
 
 --genetic_code_table <table_number> (Required)
 
