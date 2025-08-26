@@ -68,6 +68,7 @@ Specifies the path to the input FASTA file containing the reference in nucleotid
 --genetic_code_table <table_number> (Required)
 
 Specifies the genetic code table to use for translation. Genetic code tables available in this script are: 1 to 6, and 9 to 16 (for more information check this website: https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?chapter=tgencodes#SG). This is crucial for correctly identifying start and stop codons.
+
 		* Genetic_code_table 1: Universal	
 		* Genetic_code_table 2: Vertebrate Mitochondrial	
 		* Genetic_code_table 3: Yeast Mitochondrial	
