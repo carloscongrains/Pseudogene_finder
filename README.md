@@ -68,6 +68,20 @@ Specifies the path to the input FASTA file containing the reference in nucleotid
 --genetic_code_table <table_number> (Required)
 
 Specifies the genetic code table to use for translation. Genetic code tables available in this script are: 1 to 6, and 9 to 16 (for more information check this website: https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?chapter=tgencodes#SG). This is crucial for correctly identifying start and stop codons.
+		Genetic_code_table 1: Universal
+		Genetic_code_table 2:Vertebrate Mitochondrial
+		Genetic_code_table 3:Yeast Mitochondrial
+		Genetic_code_table 4:Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code
+		Genetic_code_table 5:Invertebrate Mitochondrial 
+		Genetic_code_table 6:Ciliate, Dasycladacean and Hexamita Nuclear Code
+		Genetic_code_table 9:Echinoderm and Flatworm Mitochondrial Code 
+		Genetic_code_table 10:Euplotid Nuclear Code
+		Genetic_code_table 11:Bacterial, Archaeal and Plant Plastid Code 
+		Genetic_code_table 12:Alternative Yeast Nuclear Code
+		Genetic_code_table 13:Ascidian Mitochondrial Code
+		Genetic_code_table 14:Alternative Flatworm Mitochondrial Code
+		Genetic_code_table 15:Blepharisma Nuclear Code 
+		Genetic_code_table 16:Chlorophycean Mitochondrial Code (transl_table=16)
 
 Example: 5 refers to the Invertebrate Mitochondrial genetic code.
 
