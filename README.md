@@ -106,7 +106,7 @@ The script will generate various output files within the specified --output_dir,
 
 1. A summary report detailing identified pseudogenes in a tab-delimited file named: output_results.txt and located into output_dir location.   
 2. Fasta files of every combination of query and reference.
-3. Alignments of the fasta files in 2.
+3. Alignments of the fasta files of all combinations (output 2).
 
 ---
 
