@@ -47,6 +47,14 @@ conda install bioconda::mafft
 Note: Activate the environment any time the user runs the script
 ''
 
+5. Download the script
+Option 1:
+```
+git clone
+```
+Option 2:
+Download the zip file.
+
 
 ---
 
@@ -54,7 +62,7 @@ Note: Activate the environment any time the user runs the script
 To run the script, use the following command structure:
 
 ```
-python get_stop_codon_frameshifts.py --input_fasta test_data/query.fas --input_reference teste_data/reference.fas --genetic_code_table 5 --output_dir output_dir
+python pseudogene_finder.py --input_fasta query.fasta --input_reference reference.fasta --genetic_code_table 5 --output_dir output_dir
 ```
 
 Command-Line Arguments
@@ -97,8 +105,10 @@ Specifies the path to the directory where all output files will be saved. The sc
 ## Example
 Let's say you have a file my_genes.fasta with sequences to check and known_proteins.fasta as your reference. You want to use the Standard Genetic Code (table 1) and save results to a folder named pseudogene_results.
 
+Running the test data:
+
 ```
-python get_stop_codon_frameshifts.py --input_fasta my_genes.fasta --input_reference known_proteins.fasta --genetic_code_table 1 --output_dir pseudogene_results
+python pseudogene_finder.py --input_fasta test_data/query.fas --input_reference test_data/reference.fas --genetic_code_table 5 --output_dir output_dir
 ```
 
 ---
@@ -109,6 +119,15 @@ The script will generate various output files within the specified --output_dir,
 1. A summary report detailing identified pseudogenes in a tab-delimited file named: output_results.txt and located into output_dir location.   
 2. Fasta files of every combination of query and reference.
 3. Alignments of the fasta files of all combinations (output 2).
+
+Expected final table for the test data lacated in output_dir/output_results.txt:
+
+| ID | Length_sequence | Frame_position | Stop_codons | Position_stop_codons | Position_frameshift | Conclusion | Notes |
+|---|---:|---:|---|---:|---|---|---|
+| Reference | 1536 | 1 | TAA | 1534 | - | Reference | - |
+| NC_071503.1_revcomp_64106833-64105300 | 719 | 2 | - | - | - | Gene | - |
+| NC_071503.1_revcomp_3897764-3896762 | 693 | 2 | - | - | 189, 670 | **Pseudogene** | Warning: Indel of 25 bp. Check the alignment. |
+| NC_071503.1_revcomp_3900210-3899250 | 719 | 2 | - | - | - | Gene | - |
 
 ---
 
