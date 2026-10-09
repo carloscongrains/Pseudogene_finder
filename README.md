@@ -50,7 +50,7 @@ Note: Activate the environment any time the user runs the script
 5. Download the script
 Option 1:
 ```
-git clone
+git clone https://github.com/carloscongrains/Pseudogene_finder.git
 ```
 Option 2:
 Download the zip file.
