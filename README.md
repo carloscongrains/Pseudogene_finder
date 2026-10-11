@@ -103,9 +103,9 @@ Specifies the path to the directory where all output files will be saved. The sc
 ---
 
 ## Example
-Let's say you have a file my_genes.fasta with sequences to check and known_proteins.fasta as your reference. You want to use the Standard Genetic Code (table 1) and save results to a folder named pseudogene_results.
+The test_data folder contains two files: query.fas, which includes the sequences to be tested, and reference.fas, which contains the complete COI gene sequence used as a reference.
 
-Running the test data:
+To run the test data:
 
 ```
 python pseudogene_finder.py --input_fasta test_data/query.fas --input_reference test_data/reference.fas --genetic_code_table 5 --output_dir output_dir
