@@ -132,3 +132,11 @@ Expected final table for the test data lacated in output_dir/output_results.txt:
 ---
 
 ## Reference
+
+Clavijo-Agudelo, C., Rodríguez-Castro, K. G., & Congrains, C. (2026).
+Genomic characterization of NUMTs in the fruit fly *Anastrepha ludens*
+(Diptera: Tephritidae): implications for DNA barcoding.
+*Mitochondrial DNA Part A*.
+https://doi.org/10.1080/24701394.2026.2755620
+
+---
